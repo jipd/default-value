@@ -1,0 +1,40 @@
+{
+  "name": "@jipd/default-value",
+  "version": "1.0.0",
+  "description": "Simple method for defining a default value when a value is undefined",
+  "main": "dist/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf dist && mkdir dist",
+    "build-babel": "babel ./lib -d ./dist -s",
+    "build": "npm run clean && npm run build-babel",
+    "dev": "watch 'npm run build' ./lib",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jipd/default-value.git"
+  },
+  "keywords": [
+    "javascript",
+    "default",
+    "undefined",
+    "value"
+  ],
+  "author": "Nathan Bryant",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jipd/default-value/issues"
+  },
+  "homepage": "https://github.com/jipd/default-value#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.13.0",
+    "@babel/plugin-transform-runtime": "^7.13.9",
+    "@babel/preset-env": "^7.13.9",
+    "babel-preset-minify": "^0.5.1",
+    "watch": "^1.0.2"
+  }
+}

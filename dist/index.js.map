@@ -1,0 +1,1 @@
+{"version":3,"sources":["../lib/index.js"],"names":["value","defaultValue"],"mappings":"2GAAe,SAACA,CAAD,CAAQC,CAAR,QAA0BD,CAAAA,CAAK,SAAL,CAAsBC,CAAtB,CAAqCD,CAA/D,C","sourcesContent":["export default (value, defaultValue) => (value === undefined ? defaultValue : value)\n"],"file":"index.js"}
